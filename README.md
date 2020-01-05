@@ -8,6 +8,9 @@ The CloudFormation template will use AWS Lambda to generate a dynamic SSH key pa
 
 # RedHat OpenShift system architecture:
 
+
+![N|Solid](https://raw.githubusercontent.com/meniem/openshift-cfn/master/diagram.jpg)
+
  - VPC will span three Availability Zones within Ireland region (eu-west-1a, eu-west-1b and eu-west-1c), with one private and one public subnet in each Availability Zone. Besides, An internet gateway (IGW) is used to provide internet access to the public subnet.
  - In one of the Public subnets, an Ansible config server instance will be provisioned.
  - For the Private subnet, we will provision the below instances:
